@@ -1,3 +1,22 @@
-// Place all the styles related to the haikus controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.haikus {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.haiku {
+  background-color: white;
+  box-shadow: 0 0 2px rgba(128, 128, 128, 0.5);
+  padding: 0.1rem 1rem;
+  margin: 0.5rem;
+
+  @media (min-width: 40rem) {
+    float: left;
+    width: 19rem;
+  }
+
+  pre {
+    font-family: sans-serif;
+    font-size: 0.9rem;
+  }
+}

@@ -4,7 +4,7 @@
 
   <ul class="haikus">
     <li class="haiku new-haiku">
-      <p><%= link_to image_tag("plus.svg", class: "add", alt: "Write a new haiku"), new_haiku_path %></p>
+      <%= link_to image_tag("plus.svg", class: "icon-add", alt: "Write a haiku"), new_haiku_path %>
     </li>
     <% @haikus.each do |haiku| %>
       <li class="haiku">

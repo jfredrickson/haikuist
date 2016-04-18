@@ -1,9 +1,11 @@
 <div class="container">
 
   <p id="notice"><%= notice %></p>
-  <p><%= link_to 'New Haiku', new_haiku_path %></p>
 
   <ul class="haikus">
+    <li class="haiku new-haiku">
+      <p><%= link_to image_tag("plus.svg", class: "add", alt: "Write a new haiku"), new_haiku_path %></p>
+    </li>
     <% @haikus.each do |haiku| %>
       <li class="haiku">
         <p><pre><%= haiku.content %></pre></p>
